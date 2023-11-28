@@ -20,15 +20,16 @@ Ref: https://www.debian.org/releases/stable/amd64/ch04s03.en.html
 ```console
 # vim /etc/apt/sources.list
 
-## add contrib respository 
+## add non-free respository 
 
-deb http://deb.debian.org/debian/ bookworm main non-free-firmware contrib
+deb http://deb.debian.org/debian/ bookworm main non-free-firmware non-free
 
 ## save file
 
 # sudo apt update
-# sudo apt install firmware-b43-installer
+# sudo apt install broadcom-sta-dkms
 ```
+Reboot laptop to load the new firmware
 
 ## Install NetworkManager
 ```console
